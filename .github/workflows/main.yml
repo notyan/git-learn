@@ -7,5 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Event Information
-        run: echo ${{ github.event }}
+        run: |
+          echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.repository }}'  '${{ github.event.client_payload.commit }}'"
 
