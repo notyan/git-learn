@@ -11,4 +11,4 @@ jobs:
           echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.repository }}'"
       - name: PONG - Dispatch response to received PING
         if: github.event.action == 'deploy'
-        run: echo github.event.action
+        run: echo ${{ github.event.action }}
