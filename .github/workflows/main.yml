@@ -3,7 +3,7 @@ name: Remote Dispatch Action Responder
 on: [repository_dispatch]
 
 jobs:
-  ping-pong:
+  receive-requesat:
     runs-on: ubuntu-latest
     steps:
       - name: Event Information
